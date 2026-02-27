@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.18.2",
+    "sequelize": "^6.37.7",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.15",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0"
+  },
+  "description": "Express and Sequelize backend for the photo studio site.",
+  "main": "dist/server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
